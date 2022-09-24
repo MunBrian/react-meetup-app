@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import classes from "./MainNavigation.module.css";
+
 const MainNavigation = () => {
   return (
-    <header>
-      <div>React Meetups</div>
+    <header className={classes.header}>
+      <div className={classes.logo}>React Meetups</div>
       <nav>
         <ul>
           <li>
@@ -14,7 +16,7 @@ const MainNavigation = () => {
             <Link to="/new-meetups">New Meetups</Link>
           </li>
           <li>
-            <Link to="/favorite">My Favorite</Link>
+            <Link to="/favorites">My Favorite</Link>
           </li>
         </ul>
       </nav>
